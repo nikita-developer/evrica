@@ -1,0 +1,28 @@
+
+// .section {}
+
+.section_gray {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #404853;
+}
+
+.section_houses {
+  padding: 15px;
+}
+
+.section_product {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+.section_aboutUs {
+  padding-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .section_gray {
+    padding-bottom: 6rem;
+  }
+}

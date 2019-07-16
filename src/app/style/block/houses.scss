@@ -1,0 +1,189 @@
+
+.houses {
+  overflow: hidden;
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 4rem;
+  background-color: #d8d8d8;
+}
+
+.houses__item {
+  position: relative;
+  z-index: 1;
+  margin-left: 0;
+  display: none;
+  max-width: 500px;
+  padding: 1rem 1rem 1rem 216px;
+  background-color: #fff;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 200px;
+    height: 100%;
+    background-image: url(../../media/houses/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  & .houses__arrow {
+    position: absolute;
+    top: 30%;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+
+  &_active {
+    display: block;
+  }
+}
+
+.houses__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+
+  & span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    display: block;
+    width: 18px;
+    height: 1px;
+    background-color: #979797;
+
+    &:last-child {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
+
+.houses__title {
+  margin-bottom: .5rem;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.houses__intro {
+  margin-bottom: .5rem;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, .4);
+
+  & span {
+    font-size: 13px;
+    line-height: 15px;
+    color: #000;
+  }
+
+  & img {
+    display: inline-block;
+    margin-right: .5rem;
+  }
+}
+
+.houses__addres {
+  margin-bottom: .5rem;
+  font-size: 13px;
+  line-height: 15px;
+  color: #404853;
+}
+
+.houses__count {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3px;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, .4);
+
+  & span {
+    margin-left: 1.5rem;
+    font-size: 13px;
+    line-height: 15px;
+    color: #404853;
+  }
+}
+
+.houses__readiness {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, .4);
+
+  & span {
+    margin-left: 1.5rem;
+    font-size: 13px;
+    line-height: 15px;
+    color: #404853;
+    text-align: left;
+  }
+}
+
+.houses__btn {
+  margin-top: 1rem;
+  width: 100%;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.houses__label {
+  position: absolute;
+  z-index: 0;
+  line-height: 39px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover::before {
+    background-color: #62c1a8;
+  }
+
+  &::before {
+    position: absolute;
+    left: -15px;
+    z-index: -1;
+    content: '';
+    width: 39px;
+    height: 39px;
+    border-radius: 50% 50% 50% 0;
+    background-color: #74CFB7;
+    transform: rotate(-45deg);
+    transition: .3s;
+  }
+
+  &_one {
+    top: 50%;
+    left: 50%;
+  }
+  &_two {
+    top: 30%;
+    left: 70%;
+  }
+  &_three {
+    top: 80%;
+    left: 80%;
+  }
+  &_four {
+    top: 60%;
+    left: 65%;
+  }
+}

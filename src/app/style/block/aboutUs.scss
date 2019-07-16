@@ -1,0 +1,66 @@
+
+.aboutUs {
+  padding: 3rem;
+  border: 2px solid #e5e5e5;
+}
+
+.aboutUs__title {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #1F252D;
+}
+
+.aboutUs__description {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1F252D;
+}
+
+.aboutUs__intro {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #1F252D;
+}
+
+.aboutUs__job {
+  display: flex;
+  flex: 1;
+}
+
+.aboutUs__job-item {
+  margin-bottom: 2rem;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #1F252D;
+
+  & + & {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutUs {
+    padding: 2rem;
+  }
+
+  .aboutUs__job {
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  .aboutUs__job-item {
+    margin-bottom: .5rem;
+
+    & + & {
+      padding-left: 0;
+    }
+  }
+}

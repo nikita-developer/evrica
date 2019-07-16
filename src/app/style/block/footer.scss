@@ -1,0 +1,39 @@
+
+.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_copy {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1F252D;
+}
+
+.footer__company {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1F252D;
+
+  & img {
+    margin-right: .5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer_copy {
+    margin-bottom: 2rem;
+  }
+}
